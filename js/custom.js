@@ -1,4 +1,20 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const navbarBrand = document.querySelector('.navbar-brand');
+    const heroSection = document.querySelector('#intro');
 
+    window.addEventListener('scroll', function() {
+      const heroSectionTop = heroSection.getBoundingClientRect().top;
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition >= heroSectionTop) {
+        navbarBrand.classList.add('visible');
+      } else {
+        navbarBrand.classList.remove('visible');
+      }
+    });
+  });
+  
+  
   $(function () {
     'use strict'
 
