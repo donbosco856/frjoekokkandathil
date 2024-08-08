@@ -199,7 +199,13 @@ https://www.tooplate.com/view/2120-ben-resume
     color: var(--white-color);
     font-weight: var(--font-weight-light);
     font-size: var(--h4-font-size);
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
   } 
+
+  .navbar-brand.visible{
+    opacity: 1;
+  }
 
   .navbar .custom-btn {
     background: var(--primary-color);
@@ -331,11 +337,15 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .hero 
   {
-    margin-top: 5em;
+    margin-top: 10em;
   }
 
   .desig-container{
     margin-top: 100px;
+  }
+
+  .dp{
+    height: 25em;
   }
 
   /*---------------------------------------
@@ -581,6 +591,11 @@ https://www.tooplate.com/view/2120-ben-resume
     color: black;
   }
 
+  iframe{
+    height: 30em;
+    width: 30em;
+  }
+
   /*---------------------------------------
      RESPONSIVE STYLES              
   -----------------------------------------*/
@@ -658,7 +673,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
     .hero 
     {
-      margin-top: 4em;
+      margin-top: 6em;
     }
   
   }
@@ -676,7 +691,7 @@ https://www.tooplate.com/view/2120-ben-resume
     }
 
     .navbar-brand {
-      font-size: 12px; /* Adjust as needed */
+      font-size: 20px; /* Adjust as needed */
     }
 
     .desig-container{
@@ -685,7 +700,12 @@ https://www.tooplate.com/view/2120-ben-resume
 
     .hero 
   {
-    margin-top: 4em;
+    margin-top: 6em;
+  }
+
+  iframe{
+    height: 22em;
+    width: 22em;
   }
   
   }
